@@ -21,7 +21,7 @@ function initMap() {
     map = new google.maps.Map(document.getElementById('map'), {
         zoom: 5,
         center: {
-            lat: 39.8283,
+            lat: 38.0000,
             lng: -98.5795
         }
     });
@@ -41,9 +41,9 @@ function initMap() {
         let html = 'Count: ' + count;
         infoWindow.setContent(html);
         infoWindow.setPosition(event.latLng);
-        infoWindow.setOptions({pixelOffset: new google.maps.Size(0,-30)});
+        infoWindow.setOptions({ pixelOffset: new google.maps.Size(0, -30) });
         infoWindow.open(map);
-      });
+    });
 }
 
 
@@ -108,7 +108,7 @@ function addEventListenersForRadioButtonGroup(group, callback) {
     group.forEach(
         function(rb) {
             rb.addEventListener("click", callback, false);
-        }    
+        }
     );
 }
 
@@ -122,18 +122,18 @@ function addEventListenersForRadioButtonGroup(group, callback) {
 // day_index: the number of days into the pandemic to get a value for
 // get_color: boolean value, if true get the color instead of the metric
 function getValueBasedOnStateAndDay(state, day_index, getColor) {
-        let data = current_data[day_index];
-        var metric_label = current_metric;
-        if (getColor) {
-            metric_label = metric_label + "_color";
-        }
+    let data = current_data[day_index];
+    var metric_label = current_metric;
+    if (getColor) {
+        metric_label = metric_label + "_color";
+    }
 
-        for (index in data["values"]) {
-            let entry = data["values"][index];
-            if (entry["state"] == state) {
-                return entry[metric_label];
-            }
+    for (index in data["values"]) {
+        let entry = data["values"][index];
+        if (entry["state"] == state) {
+            return entry[metric_label];
         }
+    }
 }
 
 
@@ -144,7 +144,7 @@ function setEventHandlers() {
         dateLabel.innerHTML = daily_data[sliderValue]["date"];
         setDaysIntoPandemic(sliderValue);
     }, false);
-    
+
     //
     addEventListenersForRadioButtonGroup(metricRadioGroup, changeMetric);
     addEventListenersForRadioButtonGroup(intervalRadioGroup, changeInterval);

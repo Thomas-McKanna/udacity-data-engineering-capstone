@@ -1,5 +1,7 @@
 # Data Engineering Capstone Project
 
+<img src='https://github.com/Thomas-McKanna/udacity-data-engineering-capstone/raw/master/covid_map.gif' title='Video Walkthrough' width='300' alt='Video Walkthrough' />
+
 ## Steps taken to generate map boundaries
 
 I followed the guide at https://simplemaps.com/resources/shapes-google-maps. I downloaded shapefile data from https://catalog.data.gov/dataset/tiger-line-shapefile-2019-nation-u-s-current-county-and-equivalent-national-shapefile. The result of the guide was a GeoJSON file containing map boundaries by county.
