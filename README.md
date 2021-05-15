@@ -98,7 +98,7 @@ Note: Docker, Python, and a Google Maps JavaScript API key are needed to complet
 
 1. Clone the repo: `git clone https://github.com/Thomas-McKanna/udacity-data-engineering-capstone.git`
 2. Go to repo: `cd udacity-data-engineering-capstone`
-3. Start Jupyter notebook docker container: `docker run -it --rm -p 8888:8888 -v .:/home/jovyan/work jupyter/pyspark-notebook`
+3. Start Jupyter notebook docker container: `docker run -it --rm -p 8888:8888 -v <path/to/repo>:/home/jovyan/work jupyter/pyspark-notebook`
 4. Follow instructions in terminal to open up web interface to Jupyter notebook and open `etl.ipynb`
 5. Run all parts of notebook to produce Spark output folders
 6. Run post-processing script: `python3 post_processing.py`
