@@ -1,6 +1,6 @@
 # Data Engineering Capstone Project
 
-<img src='https://github.com/Thomas-McKanna/udacity-data-engineering-capstone/raw/master/covid_map.gif' title='Video Walkthrough' width='300' alt='Video Walkthrough' />
+<img src='https://github.com/Thomas-McKanna/udacity-data-engineering-capstone/raw/master/covid_map.gif' title='Video Walkthrough' width='1000' alt='Video Walkthrough' />
 
 ## Steps taken to generate map boundaries
 
