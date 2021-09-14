@@ -4,8 +4,6 @@ This repository contains the data and code used to create my capstone project fo
 
 The project uses Apache Spark to process publicly available Covid-19 data, aggregating by one-day, seven-day, and thirty-day rolling averages. Data for each interval is then assigned to one of ten buckets, indicating severity at that point in time. This aggregated data is then used to power a web application that displays the data on a Google Map. 
 
-**Note: for a limited time, I am hosting the web application on an AWS EC2 instance so that you can easily access it at [http://34.213.82.226/](http://34.213.82.226/)**
-
 The user is able to use take the following actions:
 
 - Use the slider to navigate through time
